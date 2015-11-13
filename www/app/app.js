@@ -3,7 +3,7 @@ import {App, IonicApp, Platform} from 'ionic/ionic';
 import {GettingStartedPage} from './getting-started/getting-started';
 import {ListPage} from './list/list';
 import {GridPage} from './grid/grid';
-
+import './app.scss';
 
 @App({
   templateUrl: 'app/app.html'
