@@ -1,5 +1,5 @@
-import {IonicApp, Page, NavController, NavParams} from 'ionic/ionic';
-import './list.scss';
+import {IonicApp, Page, NavController, NavParams} from 'ionic-framework/ionic';
+
 
 @Page({
   templateUrl: 'app/list/list.html'

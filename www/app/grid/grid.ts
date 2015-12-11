@@ -1,5 +1,5 @@
-import {Page} from 'ionic/ionic';
-import './grid.scss';
+import {Page} from 'ionic-framework/ionic';
+
 
 @Page({
   templateUrl: 'app/grid/grid.html'

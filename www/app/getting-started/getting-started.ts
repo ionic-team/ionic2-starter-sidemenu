@@ -1,5 +1,5 @@
-import {Page, NavController} from 'ionic/ionic';
-import './getting-started.scss';
+import {Page, NavController} from 'ionic-framework/ionic';
+
 
 @Page({
   templateUrl: 'app/getting-started/getting-started.html'

@@ -1,9 +1,9 @@
-import {App, IonicApp, Platform} from 'ionic/ionic';
+import {App, IonicApp, Platform} from 'ionic-framework/ionic';
 
 import {GettingStartedPage} from './getting-started/getting-started';
 import {ListPage} from './list/list';
 import {GridPage} from './grid/grid';
-import './app.scss';
+
 
 @App({
   templateUrl: 'app/app.html'
@@ -15,7 +15,7 @@ class MyApp {
 
     this.initializeApp();
 
-    // used for an example of ng-for and navigation
+    // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Getting Started', component: GettingStartedPage },
       { title: 'List', component: ListPage },
