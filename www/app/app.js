@@ -1,4 +1,4 @@
-import {App, IonicApp, Platform} from 'ionic-framework/ionic';
+import {App, IonicApp, Platform} from 'ionic/ionic';
 
 import {GettingStartedPage} from './getting-started/getting-started';
 import {ListPage} from './list/list';
