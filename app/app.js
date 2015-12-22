@@ -1,12 +1,12 @@
 import {App, IonicApp, Platform} from 'ionic/ionic';
 
-import {GettingStartedPage} from './getting-started/getting-started';
-import {ListPage} from './list/list';
-import {GridPage} from './grid/grid';
+import {GettingStartedPage} from './pages/getting-started/getting-started';
+import {ListPage} from './pages/list/list';
+import {GridPage} from './pages/grid/grid';
 
 
 @App({
-  templateUrl: 'app/app.html'
+  templateUrl: 'build/app.html'
 })
 class MyApp {
   constructor(app: IonicApp, platform: Platform) {
