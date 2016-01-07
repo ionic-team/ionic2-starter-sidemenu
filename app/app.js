@@ -1,4 +1,4 @@
-import {App, IonicApp, Platform} from 'ionic/ionic';
+import {App, IonicApp, Platform, Config} from 'ionic/ionic';
 
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
@@ -6,7 +6,10 @@ import {GridPage} from './pages/grid/grid';
 
 
 @App({
-  templateUrl: 'build/app.html'
+  templateUrl: 'build/app.html',
+  // Check out the config API docs for more info
+  // http://ionicframework.com/docs/v2/api/config/Config/
+  config: {}
 })
 class MyApp {
   constructor(app: IonicApp, platform: Platform) {
