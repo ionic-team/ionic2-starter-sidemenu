@@ -1,37 +1,34 @@
-import {App, IonicApp, Platform, Config} from 'ionic-framework/ionic';
+import {App, IonicApp, Platform} from 'ionic-framework/ionic';
 
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
 import {GridPage} from './pages/grid/grid';
 
+// https://angular.io/docs/ts/latest/api/core/Type-interface.html
+import {Type} from 'angular2/core';
 
 @App({
   templateUrl: 'build/app.html',
-  // Check out the config API docs for more info
-  // http://ionicframework.com/docs/v2/api/config/Config/
-  config: {}
+  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
-  constructor(app: IonicApp, platform: Platform) {
-    this.app = app;
-    this.platform = platform;
+  rootPage: Type = GettingStartedPage;
+  pages: Array<{title: string, component: Type}>
 
+  constructor(private app: IonicApp, private platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Getting Started', component: GettingStartedPage },
       { title: 'List', component: ListPage },
-      { title: 'Grid Icons', component: GridPage },
+      { title: 'Grid Icons', component: GridPage }
     ];
 
-    this.rootPage = GettingStartedPage;
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      console.log('Platform ready');
-
       // The platform is now ready. Note: if this callback fails to fire, follow
       // the Troubleshooting guide for a number of possible solutions:
       //
@@ -46,7 +43,6 @@ class MyApp {
       // For example, we might change the StatusBar color. This one below is
       // good for dark backgrounds and light text:
       // StatusBar.setStyle(StatusBar.LIGHT_CONTENT)
-
     });
   }
 
