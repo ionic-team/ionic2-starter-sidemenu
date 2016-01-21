@@ -1,11 +1,11 @@
-import {IonicApp, Page, NavController, NavParams} from 'ionic/ionic';
+import {Page, NavController, NavParams} from 'ionic/ionic';
 
 
 @Page({
   templateUrl: 'build/pages/list/list.html'
 })
 export class ListPage {
-  constructor(app: IonicApp, nav: NavController, navParams: NavParams) {
+  constructor(nav: NavController, navParams: NavParams) {
     this.nav = nav;
 
     // If we navigated to this page, we will have an item available as a nav param
