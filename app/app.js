@@ -1,4 +1,4 @@
-import {App, IonicApp, Platform} from 'ionic/ionic';
+import {App, IonicApp, Platform} from 'ionic-framework/ionic';
 import {Inject} from 'angular2/core';
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
