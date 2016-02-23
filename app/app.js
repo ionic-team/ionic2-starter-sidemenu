@@ -1,5 +1,4 @@
 import {App, IonicApp, Platform} from 'ionic-framework/ionic';
-import {Inject} from 'angular2/core';
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
 import {GridPage} from './pages/grid/grid';
@@ -10,7 +9,11 @@ import {GridPage} from './pages/grid/grid';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
-  constructor(@Inject(IonicApp) app, @Inject(Platform) platform) {
+  static get parameters(){
+    return [[IonicApp], [Platform]];
+  }
+
+  constructor(app, platform) {
     this.app = app;
     this.platform = platform;
 
