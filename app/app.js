@@ -1,7 +1,6 @@
 import {App, IonicApp, Platform} from 'ionic-framework/ionic';
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
-import {GridPage} from './pages/grid/grid';
 
 
 @App({
@@ -22,8 +21,7 @@ class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Getting Started', component: GettingStartedPage },
-      { title: 'List', component: ListPage },
-      { title: 'Grid Icons', component: GridPage }
+      { title: 'List', component: ListPage }
     ];
 
     this.rootPage = GettingStartedPage;
