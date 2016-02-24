@@ -9,7 +9,7 @@ import {ListPage} from './pages/list/list';
 })
 class MyApp {
   rootPage: any = GettingStartedPage;
-  pages: Array<{title: string, component: Type}>
+  pages: Array<{title: string, component: any}>
 
   constructor(private app: IonicApp, private platform: Platform) {
     this.initializeApp();
