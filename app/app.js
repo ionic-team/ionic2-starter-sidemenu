@@ -8,7 +8,7 @@ import {ListPage} from './pages/list/list';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
-  static get parameters(){
+  static get parameters() {
     return [[IonicApp], [Platform]];
   }
 

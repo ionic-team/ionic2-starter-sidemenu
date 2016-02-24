@@ -5,7 +5,7 @@ import {Page, NavController, NavParams} from 'ionic-framework/ionic';
   templateUrl: 'build/pages/list/list.html'
 })
 export class ListPage {
-  static get parameters(){
+  static get parameters() {
     return [[NavController], [NavParams]];
   }
 
