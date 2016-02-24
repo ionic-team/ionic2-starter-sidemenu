@@ -2,15 +2,13 @@ import {App, IonicApp, Platform} from 'ionic-framework/ionic';
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
 
-// https://angular.io/docs/ts/latest/api/core/Type-interface.html
-import {Type} from 'angular2/core';
 
 @App({
   templateUrl: 'build/app.html',
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
-  rootPage: Type = GettingStartedPage;
+  rootPage: any = GettingStartedPage;
   pages: Array<{title: string, component: Type}>
 
   constructor(private app: IonicApp, private platform: Platform) {
