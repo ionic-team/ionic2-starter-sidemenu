@@ -1,4 +1,5 @@
-import {App, IonicApp, Platform} from 'ionic-angular';
+import {ViewChild} from '@angular/core';
+import {App, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
@@ -6,15 +7,17 @@ import {ListPage} from './pages/list/list';
 
 @App({
   templateUrl: 'build/app.html',
-  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
+  config: {}, // http://ionicframework.com/docs/v2/api/config/Config/
+  queries: {
+    nav: new ViewChild('content')
+  }
 })
 class MyApp {
   static get parameters() {
-    return [[IonicApp], [Platform]];
+    return [[Platform]];
   }
 
-  constructor(app, platform) {
-    this.app = app;
+  constructor(platform) {
     this.platform = platform;
 
     this.initializeApp();
@@ -39,7 +42,6 @@ class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    let nav = this.app.getComponent('nav');
-    nav.setRoot(page.component);
+    this.nav.setRoot(page.component);
   }
 }
