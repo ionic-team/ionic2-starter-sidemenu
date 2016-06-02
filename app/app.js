@@ -1,5 +1,5 @@
-import {ViewChild, Component} from '@angular/core';
-import {Platform, ionicBootstrap} from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {ionicBootstrap, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
@@ -7,7 +7,6 @@ import {ListPage} from './pages/list/list';
 
 @Component({
   templateUrl: 'build/app.html',
-  config: {}, // http://ionicframework.com/docs/v2/api/config/Config/
   queries: {
     nav: new ViewChild('content')
   }
