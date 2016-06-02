@@ -6,8 +6,7 @@ import {ListPage} from './pages/list/list';
 
 
 @Component({
-  templateUrl: 'build/app.html',
-  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
+  templateUrl: 'build/app.html'
 })
 class MyApp {
   @ViewChild(Nav) nav: Nav;
