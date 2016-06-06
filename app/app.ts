@@ -1,13 +1,12 @@
-import {ViewChild} from '@angular/core';
-import {App, Platform, Nav} from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {App, ionicBootstrap, Platform, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
 
 
-@App({
-  templateUrl: 'build/app.html',
-  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
+@Component({
+  templateUrl: 'build/app.html'
 })
 class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -40,3 +39,5 @@ class MyApp {
     this.nav.setRoot(page.component);
   }
 }
+
+ionicBootstrap(MyApp);

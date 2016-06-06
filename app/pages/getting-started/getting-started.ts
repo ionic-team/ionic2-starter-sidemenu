@@ -1,3 +1,4 @@
+import {Component} from "@angular/core";
 import {Page} from 'ionic-angular';
 
 
