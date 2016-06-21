@@ -1,11 +1,10 @@
-import {Component} from "@angular/core";
-import {NavController, NavParams} from 'ionic-angular';
-
+import { Component } from "@angular/core";
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  templateUrl: 'build/pages/list/list.html'
+  templateUrl: 'build/pages/page2/page2.html'
 })
-export class ListPage {
+export class Page2 {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
@@ -14,6 +13,7 @@ export class ListPage {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
 
+    // Let's populate this page with some filler content for funzies
     this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
     'american-football', 'boat', 'bluetooth', 'build'];
 
@@ -28,7 +28,8 @@ export class ListPage {
   }
 
   itemTapped(event, item) {
-    this.nav.push(ListPage, {
+    // That's right, we're pushing to ourselves!
+    this.nav.push(Page2, {
       item: item
     });
   }

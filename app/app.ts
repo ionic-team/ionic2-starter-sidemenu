@@ -1,9 +1,9 @@
-import {Component, ViewChild} from '@angular/core';
-import {App, ionicBootstrap, Platform, Nav} from 'ionic-angular';
-import {StatusBar} from 'ionic-native';
-import {GettingStartedPage} from './pages/getting-started/getting-started';
-import {ListPage} from './pages/list/list';
+import { Component, ViewChild } from '@angular/core';
+import { App, ionicBootstrap, Platform, Nav } from 'ionic-angular';
+import { StatusBar } from 'ionic-native';
 
+import { Page1 } from './pages/page1/page1';
+import { Page2 } from './pages/page2/page2';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -11,7 +11,8 @@ import {ListPage} from './pages/list/list';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = GettingStartedPage;
+  rootPage: any = Page1;
+
   pages: Array<{title: string, component: any}>
 
   constructor(private platform: Platform) {
@@ -19,8 +20,8 @@ class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Getting Started', component: GettingStartedPage },
-      { title: 'List', component: ListPage }
+      { title: 'Page uno', component: Page1 },
+      { title: 'Page dos', component: Page2 }
     ];
 
   }
