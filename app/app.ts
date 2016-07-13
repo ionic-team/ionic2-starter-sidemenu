@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { App, ionicBootstrap, Platform, Nav } from 'ionic-angular';
+import { ionicBootstrap, Platform, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
 import { Page1 } from './pages/page1/page1';
