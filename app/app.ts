@@ -13,7 +13,7 @@ class MyApp {
 
   rootPage: any = Page1;
 
-  pages: Array<{title: string, component: any}>
+  pages: Array<{title: string, component: any}>;
 
   constructor(private platform: Platform) {
     this.initializeApp();
