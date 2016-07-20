@@ -29,7 +29,7 @@ export class Page2 {
 
   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!
-    this.nav.push(Page2, {
+    this.navCtrl.push(Page2, {
       item: item
     });
   }
