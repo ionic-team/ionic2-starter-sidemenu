@@ -9,7 +9,7 @@ export class Page2 {
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
 
-  constructor(private navCtrl: NavController, navParams: NavParams) {
+  constructor(public navCtrl: NavController, navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
 

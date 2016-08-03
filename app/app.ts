@@ -15,7 +15,7 @@ class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(private platform: Platform) {
+  constructor(public platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
