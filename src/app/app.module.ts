@@ -3,8 +3,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { HomePageModule } from '../pages/home/home.module';
-import { ListPageModule } from '../pages/list/list.module';
 
 @NgModule({
   declarations: [
@@ -12,9 +10,7 @@ import { ListPageModule } from '../pages/list/list.module';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    HomePageModule,
-    ListPageModule
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
